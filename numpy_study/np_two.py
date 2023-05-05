@@ -2,6 +2,15 @@
 # @time : 2023-04-25
 # @file : np_two.py
 # @describe :
+#
+# 1. 在进行矩阵广播化逐元素相乘时，可以使用np.multiply()函数代替*运算符，因为np.multiply()函数可以在两个数组的形状不同时进行广播。
+#
+# 2. 在计算数组均值、方差、标准差时，可以使用np.nanmean()、np.nanvar()和np.nanstd()函数代替np.mean()、np.var()和np.std()函数，
+# 因为np.nanmean()、np.nanvar()和np.nanstd()函数可以忽略数组中的NaN值。
+#
+# 3. 在计算逆矩阵时，可以先使用np.linalg.det()函数判断矩阵是否可逆，如果矩阵不可逆，则不需要计算逆矩阵。
+
+
 import numpy as np
 a = np.array([[1,2,4], [4,5,6],[7,8,9]])
 b = np.array([[1,2,3], [4,5,6],[7,8,9]])
